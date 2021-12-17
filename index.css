@@ -50,17 +50,26 @@ main span{
     font-size: 30px;
     position: relative;
     display: block;
+    cursor: pointer;
 }
 main p{
     color: #222;
-    margin-top: 20px;
+    position: absolute;
+    top: 65px;
+}
+main a{
+    position: absolute;
+    bottom: 0;
+    text-decoration: none;
+    color: rgb(40, 135, 215);
 }
 main div{
     width: 180px;
     height: 225px;
     padding: 10px;
+    position: relative;
 }
-main span:after {
+main span::after {
     content: "";
     display: block;
     position: absolute;
@@ -71,7 +80,10 @@ main span:after {
     background: #3695D8;
     transition-duration: 0.5s;
 }
-main span:hover
+main span:hover::after {
+    width: 90%;
+    transition-duration: 0.5s;
+}
 @media screen and (max-width: 520px) {
     main section{
         width: 300px;
@@ -79,6 +91,6 @@ main span:hover
     }
     main div{
         width: 300px;
-        height: 135px;
+        height: 150px;
     }
 }
