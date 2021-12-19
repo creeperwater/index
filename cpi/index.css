@@ -1,0 +1,74 @@
+body{
+    background-color: rgb(240, 240, 240);
+}
+/* world */
+.world{
+    position: relative;
+    margin: 20px;
+    height: 500px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.world .banner{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    border-radius: 5px;
+    height: 35px;
+    background-color: #3695D8;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.world .banner div{
+    color: #fff;
+    height: 30px;
+    line-height: 30px;
+    font-size: 20px;
+    padding: 0 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition-duration: .2s;
+}
+.world .banner div:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+    transition-duration: .2s;
+}
+.world .content{
+    position: absolute;
+    top: 45px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.world .content>div{
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background-color: #fff;
+}
+.world .chart1 div{
+    height: 30px;
+    background-color: rgba(54, 148, 216, 0.2);
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.world .chart1 p{
+    position: absolute;
+    background-color: cornflowerblue;
+    left: 80px;
+    right: 10px;
+    top: 0;
+    bottom: 0;
+}
+.world .chart1 span{
+    display: block;
+    height: 100%;
+    background-color: crimson;
+}

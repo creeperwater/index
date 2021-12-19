@@ -7,7 +7,9 @@
     <title>INDEX</title>
     <base target="_blank">
     <link rel="icon" href="img/icon.jpg">
+    <link rel="stylesheet" href="init.css">
     <link rel="stylesheet" href="index.css">
+    <script src="asset/init.js"></script>
 </head>
 <body>
     <header>
@@ -19,7 +21,7 @@
             <img src="img/cpi.png">
             <div>
                 <span onclick="go('cpi')">清廉指数</span>
-                <p>清廉指数从经济学角度衡量了全球范围内各个国家或地区政府的腐败程度...kooko kooj kk</p>
+                <p>清廉指数从经济学角度衡量了全球范围内各个国家或地区政府的腐败程度</p>
                 <a href="https://transparency.org">数据来源：透明国际</a>
             </div>
         </section>
@@ -33,13 +35,10 @@
         </section>
     </main>
 </body>
-<script src="jquery.js"></script>
 <script>
     var content = $('main').children();
     content.sort(function(){ return 0.5 - Math.random() });
     $('main').html(content);
-    function go(url){
-        window.location.href=url;
-    }
+    function go(url){window.location.href=url;}
 </script>
 </html>
