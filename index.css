@@ -43,6 +43,9 @@ main section{
     display: flex;
     flex-wrap: wrap;
 }
+main section:nth-of-type(even){
+    flex-direction: row-reverse;
+} 
 main img{
     width: 300px;
 }
